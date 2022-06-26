@@ -1,9 +1,12 @@
 
-import {server} from '../config/index'
+import {server,test} from '../config/index'
 import ArticleList from "../components/ArticleList";
 import Meta from "../components/Meta";
 
+
 export default function Home({articles}) {
+
+  console.log(server)
 
   return (
     <div>
