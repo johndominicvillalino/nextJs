@@ -1,3 +1,3 @@
 const dev = process.env.NODE_END !== 'production'
 
-export const server = dev ? 'http://localhost:3000' : ''
+export const server = dev ? 'http://localhost:3000' : 'https://next-js-three-liard.vercel.app'
