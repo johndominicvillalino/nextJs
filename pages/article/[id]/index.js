@@ -18,7 +18,7 @@ const index = ({article}) => {
   )
 }
 
-export const getStaticProps = async (context) => {
+export const getServerSideProps = async (context) => {
 
     const res = await fetch(`${server}/api/articles/${context.params.id}`)
 
@@ -31,7 +31,7 @@ export const getStaticProps = async (context) => {
     }
 }
 
-export const getStaticPaths  = async () => {
+export const getServerSidePaths  = async () => {
     const res = await fetch(`${server}/api/articles/`)
 
     const article = await res.json()
